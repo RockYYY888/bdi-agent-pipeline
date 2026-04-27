@@ -25,6 +25,20 @@ under `src/benchmark_data/` rather than under generated test-output folders:
 - `src/benchmark_data/queries_LTLf.json`
   - the matching validated LTLf records consumed by the pipeline and tests
 
+## Included Jason Runtime Sweep Record
+
+This submission includes one local Jason runtime sweep record under:
+
+```text
+tests/generated/plan_library_evaluation_full/current_jason_mgen_oracle_noisy_skip_600_800_1000_20260427/
+```
+
+The root `summary.json` and `summary.txt` cover the full `115` benchmark-query
+sweep. The per-query files and runtime logs are present for the executed cases.
+For Blocksworld, `query_28`, `query_29`, and `query_30` are known large timeout
+cases, so they are counted in the summary as timeout cases but do not have
+individual query-result or runtime-log records in the copied artifact folder.
+
 ## Coverage Overview
 
 - `tests/evaluation/test_execution_logger.py`
